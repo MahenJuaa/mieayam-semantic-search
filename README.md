@@ -1,4 +1,6 @@
-# Pencarian Semantik Mie Ayam (Apache Jena)
+# mieayam-semantic-search.
+
+## Pencarian Semantik Mie Ayam (Apache Jena)
 
 Satu kotak pencarian. Ketik "halal", "pedas", "tanpa babi", "bakso tanpa telur", dst.
 Kalimat diterjemahkan ke konsep di ontologi, lalu dijalankan sebagai query SPARQL.
