@@ -61,6 +61,7 @@ public class SemanticParser {
     // ------------------------------------------------------------------ kata bantu
     private static final Set<String> STOP = new HashSet<>(Arrays.asList(
             "yang", "yg", "dan", "atau", "dengan", "dgn", "di", "ke", "dari", "untuk", "ada", "pakai", "pake",
+            "mengandung",
             "menu", "mie", "cari", "carikan", "tampilkan", "tolong", "saya", "aku", "mau", "pengen", "ingin",
             "apa", "saja", "aja", "semua", "non", "sama", "itu", "ini", "yg", "dong", "deh", "kalori"));
     private static final Set<String> CONJ = new HashSet<>(Arrays.asList("dan", "atau", "maupun", "serta"));
@@ -75,16 +76,17 @@ public class SemanticParser {
     private static final Set<String> SKIP_CLASS = new HashSet<>(Arrays.asList(
             "komponen", "karakter kuah", "kelompok", "sertifikasi", "mie ayam", "jenis mie"));
     /** Sinonim sederhana (kata -> frasa yang ada di ontologi). */
-    private static final Map<String, String> SYN = Map.of(
-            "haram", "non halal",
-            "vegan", "vegetarian",
-            "sayuran", "sayur",
-            "pedes", "pedas",
-            "kkal", "kalori",
-            "kcal", "kalori",
-            "calorie", "kalori",
-            "calories", "kalori",
-            "kalorinya", "kalori");
+    private static final Map<String, String> SYN = Map.ofEntries(
+            Map.entry("haram", "non halal"),
+            Map.entry("vegan", "vegetarian"),
+            Map.entry("sayuran", "sayur"),
+            Map.entry("pedes", "pedas"),
+            Map.entry("pisah", "dipisah"),
+            Map.entry("kkal", "kalori"),
+            Map.entry("kcal", "kalori"),
+            Map.entry("calorie", "kalori"),
+            Map.entry("calories", "kalori"),
+            Map.entry("kalorinya", "kalori"));
 
     // ------------------------------------------------------------------ kalori
     /**
@@ -124,6 +126,8 @@ public class SemanticParser {
 
     private final String ns;
     private final Map<String, Concept> vocab = new HashMap<>();
+    /** Konsep eksplisit untuk istilah yang konteksnya tidak dapat disimpulkan dari label RDF saja. */
+    private final Map<String, Concept> direct = new HashMap<>();
     private int maxWords = 1;
 
     public SemanticParser(String ns) { this.ns = ns; }
@@ -153,6 +157,24 @@ public class SemanticParser {
 
     private static String from(String[] w, int start) {
         return String.join(" ", Arrays.copyOfRange(w, start, w.length));
+    }
+
+    private Concept direct(String key, String via, Cond cond) {
+        return direct.computeIfAbsent(key, k -> {
+            Concept c = new Concept(true);
+            c.alts.add(List.of(cond));
+            c.viaOther.add(via);
+            return c;
+        });
+    }
+
+    private Concept spiceLevel(int level, String label) {
+        return direct("spice-" + level, "Tingkat pedas: " + label,
+                new Cond(ns + "tingkatPedas", Integer.toString(level)));
+    }
+
+    private Concept context(String key, String via, String property, String value) {
+        return direct(key, via, new Cond(ns + property, ns + value));
     }
 
     // ------------------------------------------------------------------ mengisi kosakata
@@ -353,6 +375,15 @@ public class SemanticParser {
         int i = 0;
         while (i < t.size()) {
             String tok = t.get(i);
+            // "tidak pedas" adalah kategori numerik, bukan negasi dari Rasa_Pedas.
+            if (at(t, i, new String[]{"tidak", "pedas"})) {
+                Concept c = spiceLevel(0, "Tidak pedas");
+                hits.add(new Hit("tidak pedas", c, null, false, g));
+                prevNeg = false;
+                neg = false;
+                i += 2;
+                continue;
+            }
             if (NEG.contains(tok)) { neg = true; i++; continue; }
 
             CalMatch cm = calorieAt(t, i);
@@ -366,13 +397,50 @@ public class SemanticParser {
                 continue;
             }
 
+            // Warna hijau tidak dimodelkan sebagai warna kuah. Jangan mengalihkannya ke Sawi_Hijau.
+            if (at(t, i, new String[]{"kuah", "hijau"})) {
+                Keyword kw = new Keyword("kuah hijau", neg, g);
+                if (!unknown.contains(kw)) unknown.add(kw);
+                prevNeg = neg;
+                neg = false;
+                i += 2;
+                continue;
+            }
+
             Concept c = null;
             String matched = null;
             int len = 0;
-            for (int n = Math.min(maxWords, t.size() - i); n >= 1; n--) {
-                String ph = String.join(" ", t.subList(i, i + n));
-                Concept x = vocab.get(ph);
-                if (x != null) { c = x; matched = ph; len = n; break; }
+            // Frasa ini harus dibedakan sebelum kosakata otomatis menggabungkan kata yang sama lintas domain.
+            if (at(t, i, new String[]{"kuah", "kuning"})) {
+                c = context("kuah-kuning", "Warna kuah: Kuning", "punyaWarnaKuah", "Warna_Kuning");
+                matched = "kuah kuning";
+                len = 2;
+            } else if (at(t, i, new String[]{"mie", "kuning"})) {
+                c = context("mie-kuning", "Jenis mie: Mie kuning", "punyaJenisMie", "Mie_Kuning");
+                matched = "mie kuning";
+                len = 2;
+            } else if (at(t, i, new String[]{"sedikit", "pedas"})) {
+                c = spiceLevel(2, "Sedang");
+                matched = "sedikit pedas";
+                len = 2;
+            } else if (at(t, i, new String[]{"agak", "pedas"})) {
+                c = spiceLevel(2, "Sedang");
+                matched = "agak pedas";
+                len = 2;
+            } else if (tok.equals("sedang")) {
+                c = spiceLevel(2, "Sedang");
+                matched = "sedang";
+                len = 1;
+            } else if (tok.equals("pedas")) {
+                c = spiceLevel(3, "Pedas");
+                matched = "pedas";
+                len = 1;
+            } else {
+                for (int n = Math.min(maxWords, t.size() - i); n >= 1; n--) {
+                    String ph = String.join(" ", t.subList(i, i + n));
+                    Concept x = vocab.get(ph);
+                    if (x != null) { c = x; matched = ph; len = n; break; }
+                }
             }
             if (c != null) {
                 boolean dup = false;
@@ -419,7 +487,10 @@ public class SemanticParser {
 
     private String conj(List<Cond> alt) {
         StringBuilder sb = new StringBuilder();
-        for (Cond c : alt) sb.append("?menu ").append(term(c.prop())).append(' ').append(term(c.value())).append(" . ");
+        for (Cond c : alt) {
+            String value = c.value().matches("-?\\d+(?:\\.\\d+)?") ? c.value() : term(c.value());
+            sb.append("?menu ").append(term(c.prop())).append(' ').append(value).append(" . ");
+        }
         return sb.toString();
     }
 

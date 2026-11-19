@@ -181,7 +181,7 @@ dialog .close{margin-top:18px;border:0;background:var(--cta);border-radius:99px;
 <script>
 const $ = s => document.querySelector(s);
 const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const PEDAS = ['Tidak pedas', 'Sedikit pedas', 'Sedang', 'Pedas'];
+const PEDAS = ['Tidak pedas', 'Sedang', 'Sedang', 'Pedas'];
 const pedas = n => PEDAS[Number(n)] || 'Pedas ' + n;
 const PL = {punyaSertifikasi:'Sertifikasi', termasukKelompok:'Kelompok', punyaJenisMie:'Jenis mie', punyaKaldu:'Kaldu',
   punyaCaraPenyajianKuah:'Penyajian kuah', punyaRasaKuah:'Rasa kuah', punyaTextureKuah:'Tekstur kuah', punyaWarnaKuah:'Warna kuah',

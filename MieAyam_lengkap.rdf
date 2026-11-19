@@ -1692,7 +1692,7 @@
         <mie:namaMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mie Ayam Vegetarian Pedas</mie:namaMenu>
         <mie:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://image.idn.media/post/20250411/whatsapp-image-2025-04-11-at-165446-f8244d87965fcbf6fea8b8bae83a977f.jpeg</mie:gambar>
         <mie:kalori rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">420</mie:kalori>
-        <mie:tingkatPedas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</mie:tingkatPedas>
+        <mie:tingkatPedas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</mie:tingkatPedas>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamBabiPangsit">
