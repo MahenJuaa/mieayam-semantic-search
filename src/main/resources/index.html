@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cari Mie Ayam</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wdth,wght@75..100,400..700&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --u:max(.7px,min(.069444vw,.104167vh));
+  --bg:#F8E6DD;--paper:#FAF9F5;--ink:#151615;--soft:#696C64;--muted:#C3C4C1;
+  --coral:#FE8A70;--cta:#FA7F62;--neg:#E5714D;--dark:#2C3426;--chip:#EFF2E9;--gold:#D9A441;
+  --sans:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;--serif:"Instrument Serif",Georgia,serif
+}
+@media(max-width:820px){:root{--u:calc(100vw/430)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-stretch:95%;line-height:1.35}
+button{font:inherit;color:inherit;cursor:pointer}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+
+/* ---------- hero ---------- */
+.hero{display:grid;grid-template-columns:46% 1fr;height:100vh;min-height:calc(600*var(--u))}
+.photo{position:relative;margin:calc(8*var(--u));border-radius:calc(30*var(--u));overflow:hidden;
+  background:var(--gold) url(/assets/hero.jpg) 50% 50%/cover no-repeat}
+.dust{position:absolute;inset:0 0 auto 0;height:30%;width:100%;pointer-events:none}
+.corner{position:absolute;left:calc(36*var(--u));bottom:calc(34*var(--u));color:#fff;font-size:calc(92*var(--u));line-height:.92;letter-spacing:-.02em;font-weight:500}
+.corner i{font-family:var(--serif);font-weight:400}
+.card{position:absolute;border-radius:calc(22*var(--u));padding:calc(20*var(--u));box-shadow:0 calc(18*var(--u)) calc(40*var(--u)) rgba(21,22,21,.18)}
+.balance{left:calc(34*var(--u));top:calc(52*var(--u));width:calc(300*var(--u));background:var(--coral);z-index:2}
+.cap{font-size:calc(11*var(--u));letter-spacing:.12em;font-weight:600}
+.big{font-size:calc(52*var(--u));font-weight:500;letter-spacing:-.02em;line-height:1.05;margin:calc(6*var(--u)) 0 calc(10*var(--u))}
+.chipw{display:inline-block;background:#fff;border-radius:99px;padding:calc(4*var(--u)) calc(11*var(--u));font-size:calc(12*var(--u));font-weight:600}
+.link{display:block;margin-top:calc(14*var(--u));font-size:calc(11*var(--u));letter-spacing:.1em;font-weight:600;text-decoration:underline;background:none;border:0;padding:0}
+.glass{left:calc(150*var(--u));top:calc(238*var(--u));width:calc(400*var(--u));height:calc(392*var(--u));z-index:1;
+  background:rgba(250,249,245,.62);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.lr{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:calc(9*var(--u)) 0;font-size:calc(15*var(--u));font-weight:500;border-bottom:1px solid rgba(21,22,21,.1)}
+.lr span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.amt{background:var(--chip);border-radius:99px;padding:calc(3*var(--u)) calc(10*var(--u));font-size:calc(12*var(--u));font-weight:600;color:var(--neg);white-space:nowrap}
+.note{position:absolute;left:calc(20*var(--u));right:calc(20*var(--u));bottom:calc(18*var(--u));background:#fff;border-radius:calc(14*var(--u));padding:calc(12*var(--u)) calc(14*var(--u));font-size:calc(13*var(--u))}
+.note button{display:block;margin-top:4px;background:none;border:0;padding:0;font-size:calc(10.5*var(--u));letter-spacing:.1em;font-weight:600}
+.dark{left:calc(318*var(--u));top:calc(372*var(--u));width:calc(290*var(--u));height:calc(168*var(--u));background:var(--dark);color:#EFF2E9;z-index:3;display:flex;flex-direction:column;justify-content:space-between}
+.dark .top{display:flex;justify-content:space-between;font-size:calc(12*var(--u));opacity:.85}
+.dark b{font-family:var(--serif);font-style:italic;font-weight:400;font-size:calc(54*var(--u));letter-spacing:-.01em;line-height:1}
+
+.col{display:flex;flex-direction:column;padding:calc(26*var(--u)) calc(40*var(--u)) calc(26*var(--u)) calc(28*var(--u));background:var(--paper);margin:calc(8*var(--u)) calc(8*var(--u)) calc(8*var(--u)) 0;border-radius:calc(30*var(--u))}
+.hd{display:flex;justify-content:space-between;align-items:center}
+.sqb{width:calc(44*var(--u));height:calc(44*var(--u));border-radius:calc(13*var(--u));border:0;background:var(--chip);font-size:calc(16*var(--u));font-weight:600}
+.sqb.d{background:var(--ink);color:#fff}
+.mark{font-weight:600;font-size:calc(22*var(--u));letter-spacing:-.02em}
+.mid{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+h1{margin:0;font-size:calc(64*var(--u));line-height:1;letter-spacing:-.035em;font-weight:500}
+.ln{display:block;overflow:hidden;padding-bottom:calc(4*var(--u))}.ln>span{display:block}
+.it{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.02em}
+.lede{margin:calc(22*var(--u)) 0 calc(28*var(--u));font-size:calc(17*var(--u));color:var(--soft);max-width:calc(470*var(--u))}
+.search{position:relative;width:min(100%,calc(560*var(--u)))}
+.search input{width:100%;font:inherit;font-size:calc(17*var(--u));height:calc(60*var(--u));padding:0 calc(176*var(--u)) 0 calc(24*var(--u));border-radius:99px;border:1px solid #E8E4DA;background:#fff;color:var(--ink)}
+.search input::placeholder{color:var(--muted)}
+.cta{position:absolute;right:calc(7*var(--u));top:calc(7*var(--u));height:calc(46*var(--u));width:calc(151*var(--u));border:0;border-radius:99px;background:var(--cta);color:var(--ink);font-weight:600;font-size:calc(16*var(--u));display:flex;align-items:center;justify-content:space-between;padding:0 calc(6*var(--u)) 0 calc(22*var(--u));transition:transform .2s}
+.cta:hover{transform:translateY(-2px)}
+.search input:focus-visible{outline-color:var(--cta);outline-offset:3px}
+.cta .sq{width:calc(34*var(--u));height:calc(34*var(--u));border-radius:calc(10*var(--u));background:var(--ink);color:#fff;display:grid;place-items:center}
+.try{display:flex;flex-wrap:wrap;gap:calc(8*var(--u));justify-content:center;margin-top:calc(20*var(--u));max-width:calc(560*var(--u))}
+.try button{border:0;background:var(--chip);border-radius:99px;padding:calc(6*var(--u)) calc(14*var(--u));font-size:calc(13*var(--u));color:var(--ink)}
+.try button:hover{background:#E2E7D8}
+.facts{text-align:center;font-size:calc(13*var(--u));color:var(--muted)}
+
+/* ---------- hasil ---------- */
+.out{background:var(--paper);padding:56px 20px 72px}
+.out>div{max-width:900px;margin:0 auto}
+.out h2{margin:0 0 12px;font-size:1.05rem;font-weight:600;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.op{font-size:.72rem;letter-spacing:.1em;background:var(--ink);color:#fff;border-radius:99px;padding:3px 10px}
+.opx{font-weight:400;color:var(--soft);font-size:.88rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.concept{display:inline-flex;flex-direction:column;padding:7px 14px;border-radius:12px;background:var(--chip)}
+.concept.neg{background:#FBE3DA;color:#9A3F22}.concept b{font-size:.95rem;font-weight:600}.concept small{font-size:.76rem;color:var(--soft)}
+.or{align-self:center;font-family:var(--serif);font-style:italic;color:var(--soft);font-size:1.1rem}
+.warn{margin:14px 0 0;padding:12px 14px;border-radius:12px;background:#FFF1D6;font-size:.88rem;display:none}
+.count{margin:32px 0 6px;font-size:1.6rem;font-weight:500;letter-spacing:-.02em}.count i{font-family:var(--serif);font-weight:400}
+ul.list{list-style:none;margin:0;padding:0}ul.list li{border-bottom:1px solid #E8E4DA}
+ul.list button.row{display:block;width:100%;text-align:left;background:none;border:0;padding:16px 6px}
+ul.list button.row:hover{background:#fff}
+ul.list button.row{display:flex;gap:16px;align-items:center}
+.row .info{flex:1;min-width:0}
+.thumb{flex:0 0 auto;width:92px;height:92px;border-radius:14px;object-fit:cover;background:var(--chip)}
+.hero-img{display:block;width:100%;height:210px;object-fit:cover;border-radius:16px;margin:0 0 14px;background:var(--chip)}
+.row .name{font-weight:600;font-size:1.05rem}.row .meta{color:var(--soft);font-size:.88rem;margin:2px 0 8px}
+.tag{display:inline-block;border-radius:99px;padding:2px 10px;font-size:.76rem;margin:2px 6px 0 0;background:var(--chip)}
+.tag.g{background:#DDEBCF}.tag.r{background:#FBE3DA;color:#9A3F22}
+.empty{padding:26px 0;color:var(--soft)}.empty b{color:var(--ink)}
+details.sparql{margin-top:36px}details.sparql summary{cursor:pointer;font-weight:600;font-size:.92rem}
+pre{background:var(--dark);color:#EFF2E9;padding:16px;border-radius:14px;overflow:auto;font-size:.8rem;line-height:1.5;white-space:pre-wrap;word-break:break-word}
+footer.end{padding:22px 20px 30px;text-align:center;font-size:.82rem;color:var(--soft);background:var(--paper)}
+
+dialog{border:0;border-radius:24px;padding:26px;width:min(520px,92vw);background:var(--paper);color:var(--ink);box-shadow:0 30px 80px rgba(21,22,21,.3)}
+dialog::backdrop{background:rgba(21,22,21,.45)}
+dialog h2{font-family:var(--serif);font-style:italic;font-weight:400;margin:0;font-size:2rem}
+dialog .sub{color:var(--soft);margin:2px 0 14px}dialog h3{margin:16px 0 6px;font-size:.9rem}
+dialog dl{display:grid;grid-template-columns:130px 1fr;gap:6px 10px;margin:0}dialog dt{color:var(--soft);font-size:.9rem}dialog dd{margin:0}
+dialog p,dialog li{font-size:.92rem;color:var(--soft)}dialog ul{padding-left:18px;margin:6px 0}
+dialog .close{margin-top:18px;border:0;background:var(--cta);border-radius:99px;padding:9px 22px;font-weight:600}
+.toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 18px;border-radius:99px;display:none;z-index:20}
+
+/* ---------- ponsel: kolom kanan dulu, panel foto di bawah ---------- */
+@media(max-width:820px){
+  .hero{display:flex;flex-direction:column;height:auto}
+  .col{order:1;margin:calc(8*var(--u));padding:calc(20*var(--u));min-height:calc(780*var(--u))}
+  .photo{order:2;height:calc(820*var(--u));margin:0 calc(8*var(--u)) calc(8*var(--u))}
+  h1{font-size:calc(46*var(--u))}.lede{font-size:calc(16*var(--u))}
+  .search input{height:calc(56*var(--u));font-size:calc(15*var(--u));padding-right:calc(150*var(--u))}
+  .cta{width:calc(132*var(--u));height:calc(42*var(--u))}
+  .balance{width:calc(260*var(--u));left:calc(18*var(--u))}.glass{left:calc(80*var(--u));width:calc(320*var(--u))}.dark{left:calc(110*var(--u));width:calc(290*var(--u))}
+  .corner{font-size:calc(58*var(--u))}.glass{height:calc(380*var(--u))}.dark{top:calc(360*var(--u))}
+}
+</style>
+</head>
+<body>
+<section class="hero">
+  <aside class="photo" aria-label="Ringkasan hasil pencarian">
+    <svg class="dust" viewBox="0 0 660 280" aria-hidden="true" fill="#fff"><circle cx="120" cy="40" r="2" opacity=".8"/><circle cx="260" cy="90" r="1.6" opacity=".6"/><circle cx="410" cy="30" r="2.2" opacity=".7"/><circle cx="530" cy="120" r="1.5" opacity=".6"/><circle cx="600" cy="55" r="2" opacity=".8"/><circle cx="70" cy="150" r="1.4" opacity=".5"/></svg>
+
+    <div class="card balance">
+      <div class="cap">MENU DITEMUKAN</div>
+      <div class="big" id="c-count">&ndash;</div>
+      <span class="chipw" id="c-concepts">memuat ontologi</span>
+      <button class="link" id="c-go" type="button">LIHAT HASIL</button>
+    </div>
+
+    <div class="card glass">
+      <div id="c-rows"></div>
+      <div class="note"><span id="c-note">&nbsp;</span><button id="c-q" type="button">LIHAT QUERY SPARQL &#8599;</button></div>
+    </div>
+
+    <div class="card dark">
+      <div class="top"><span>Apache Jena</span><span>SPARQL</span></div>
+      <b>mie ayam</b>
+    </div>
+
+    <div class="corner">Halo,<br><i>ini mie ayam</i></div>
+  </aside>
+
+  <div class="col">
+    <header class="hd">
+      <button class="sqb" id="b-about" type="button" aria-label="Tentang ontologi">&#9776;</button>
+      <span class="mark">mie ayam</span>
+      <button class="sqb d" id="b-help" type="button" aria-label="Cara menulis pencarian">?</button>
+    </header>
+
+    <div class="mid">
+      <h1><span class="ln"><span>Mie ayam</span></span><span class="ln"><span>sesuai maumu,</span></span><span class="ln"><span class="it">dicari lewat makna</span></span></h1>
+      <p class="lede">Tulis seperti bicara: halal, tanpa babi, rendah kalori. Pencarian membaca ontologi OWL, bukan sekadar mencocokkan kata.</p>
+      <form class="search" id="form" role="search">
+        <label class="sr" for="q">Cari menu mie ayam</label>
+        <input id="q" type="search" autocomplete="off" autofocus placeholder="halal, tanpa babi, rendah kalori&hellip;">
+        <button class="cta" type="submit">Cari<span class="sq" aria-hidden="true">&rarr;</span></button>
+      </form>
+      <div class="try" id="try"></div>
+    </div>
+
+    <div class="facts">Ontologi OWL &middot; SPARQL &middot; Apache Jena</div>
+  </div>
+</section>
+
+<section class="out" id="out" hidden>
+  <div>
+    <h2>Dipahami sebagai <span class="op" id="op" hidden></span><span class="opx" id="opx"></span></h2>
+    <div class="chips" id="chips"></div>
+    <p class="warn" id="unknown" role="status"></p>
+    <div class="count" id="count" aria-live="polite"></div>
+    <ul class="list" id="list"></ul>
+    <details class="sparql" id="sq"><summary>Lihat query SPARQL yang dijalankan</summary><pre id="sparql"></pre></details>
+  </div>
+</section>
+<footer class="end">Hasil berasal dari relasi RDF/OWL di MieAyam_lengkap.rdf, diproses Apache Jena.</footer>
+
+<dialog id="dlg"><h2 id="dt"></h2><div class="sub" id="ds"></div><div id="db"></div><button class="close" type="button" id="dclose">Tutup</button></dialog>
+<div class="toast" id="toast" role="alert"></div>
+
+<script>
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const PEDAS = ['Tidak pedas', 'Sedikit pedas', 'Sedang', 'Pedas'];
+const pedas = n => PEDAS[Number(n)] || 'Pedas ' + n;
+const PL = {punyaSertifikasi:'Sertifikasi', termasukKelompok:'Kelompok', punyaJenisMie:'Jenis mie', punyaKaldu:'Kaldu',
+  punyaCaraPenyajianKuah:'Penyajian kuah', punyaRasaKuah:'Rasa kuah', punyaTextureKuah:'Tekstur kuah', punyaWarnaKuah:'Warna kuah',
+  punyaTopping:'Topping', punyaBumbu:'Bumbu'};
+const EXAMPLES = ['halal', 'pedas', 'haram atau pedas', 'vegetarian', 'bakso', 'tanpa babi', 'kuah bening', 'rendah kalori', 'bakso atau pangsit'];
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+let timer = null, seq = 0, shown = false;
+const toRows = d => d.rows.map(r => Object.fromEntries(d.columns.map((c, i) => [c, r[i]])));
+
+function toast(msg) { const t = $('#toast'); t.textContent = msg; t.style.display = 'block'; setTimeout(() => t.style.display = 'none', 4000); }
+async function api(url) {
+  try { return await (await fetch(url)).json(); }
+  catch (e) { toast('Tidak bisa menghubungi server. Pastikan aplikasi Java masih berjalan.'); return {error: 'Server tidak terhubung'}; }
+}
+function imgTag(url, alt, cls) {
+  if (!url || !/^https?:\/\//.test(url)) return '';
+  return `<img class="${cls}" src="${esc(url)}" alt="${esc(alt)}" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'">`;
+}
+function tagClass(s) { if (/Non/.test(s)) return /Halal/.test(s) ? 'r' : ''; return /Halal|Vegetarian/.test(s) ? 'g' : ''; }
+function viaText(via) { if (!via.length) return ''; const s = via.slice(0, 3).join(', '); return via.length > 3 ? s + ' +' + (via.length - 3) + ' lainnya' : s; }
+
+function paintCards(d) {
+  const rows = toRows(d), nc = d.understood.length;
+  $('#c-count').textContent = rows.length;
+  $('#c-concepts').textContent = nc ? nc + ' konsep dipahami' : 'semua menu di ontologi';
+  $('#c-rows').innerHTML = rows.slice(0, 3).map(m => `<div class="lr"><span>${esc(m.nama)}</span><b class="amt">${esc(m.kalori)} kkal</b></div>`).join('')
+    || '<div class="lr"><span>Tidak ada menu yang cocok</span></div>';
+  $('#c-note').textContent = d.unknown.length ? '\u201C' + d.unknown[0].text + '\u201D tidak ada di ontologi' : 'Hasil dari relasi RDF di ontologi';
+}
+
+function renderUnderstood(d) {
+  const groups = new Set([...d.understood, ...d.unknown].map(x => x.group));
+  const hasAnd = [...groups].some(g => [...d.understood, ...d.unknown].filter(x => x.group === g).length > 1);
+  const op = groups.size > 1 ? (hasAnd ? 'AND + OR' : 'OR') : (hasAnd ? 'AND' : '');
+  $('#op').hidden = !op; $('#op').textContent = op;
+  $('#opx').textContent = op === 'OR' ? 'salah satu syarat cukup' : op === 'AND' ? 'semua syarat harus terpenuhi' : op ? 'syarat dalam satu kelompok digabung AND, antar kelompok OR' : '';
+  $('#chips').innerHTML = d.understood.map((u, i) =>
+    (i > 0 && u.group !== d.understood[i - 1].group ? '<span class="or">atau</span>' : '') +
+    `<span class="concept${u.neg ? ' neg' : ''}"><b>${u.neg ? 'tanpa ' : ''}${esc(u.text)}</b><small>${esc(viaText(u.via))}</small></span>`).join('')
+    || '<span class="opx">Tidak ada syarat: semua menu ditampilkan.</span>';
+  const unk = d.unknown.map(k => `\u201C${esc(k.text)}\u201D`);
+  const w = $('#unknown');
+  w.style.display = unk.length ? 'block' : 'none';
+  w.innerHTML = unk.length ? `${unk.join(', ')} tidak ada di ontologi, jadi dicari pada nama menu.` : '';
+}
+
+function renderRows(d) {
+  const rows = toRows(d);
+  $('#count').innerHTML = `<i>${rows.length}</i> menu ditemukan`;
+  if (!rows.length) { $('#list').innerHTML = '<li class="empty"><b>Tidak ada menu yang cocok.</b> Coba kurangi kata kunci atau pakai kata yang lebih umum.</li>'; return; }
+  $('#list').innerHTML = rows.map(m => `<li><button class="row" type="button" data-id="${esc(m.menu)}">
+    ${imgTag(m.gambar, m.nama, 'thumb')}
+    <div class="info">
+    <div class="name">${esc(m.nama)}</div>
+    <div class="meta">${esc(m.kalori)} kkal &middot; ${pedas(m.pedas)}</div>
+    <span class="tag ${tagClass(m.sert)}">${esc(m.sert.replace('Sertifikasi ', ''))}</span><span class="tag ${tagClass(m.kel)}">${esc(m.kel.replace('Kelompok ', ''))}</span><span class="tag">${esc(m.jenisMie)}</span>
+    </div>
+  </button></li>`).join('');
+  document.querySelectorAll('button.row').forEach(b => b.onclick = () => detail(b.dataset.id));
+}
+
+function reveal() {
+  $('#out').hidden = false; shown = true;
+  $('#out').scrollIntoView({behavior: reduce ? 'auto' : 'smooth', block: 'start'});
+}
+
+async function search(explicit) {
+  const my = ++seq;
+  const d = await api('/api/search?q=' + encodeURIComponent($('#q').value));
+  if (my !== seq) return;
+  if (d.error) { paintCards({rows: [], columns: [], understood: [], unknown: [{text: d.error}]}); if (shown) { $('#count').textContent = 'Terjadi kesalahan'; $('#list').innerHTML = `<li class="empty">${esc(d.error)}</li>`; } return; }
+  paintCards(d);
+  $('#sparql').textContent = d.query;
+  renderUnderstood(d); renderRows(d);
+  if (explicit) reveal();
+}
+
+function show(title, sub, html) { $('#dt').textContent = title; $('#ds').textContent = sub; $('#db').innerHTML = html; $('#dlg').showModal(); }
+
+async function detail(id) {
+  const d = await api('/api/detail?id=' + encodeURIComponent(id));
+  if (d.error) { toast(d.error); return; }
+  const P = Object.fromEntries(d.props.map(p => [p.k, p.v]));
+  const single = ['punyaSertifikasi','termasukKelompok','punyaJenisMie','punyaKaldu','punyaCaraPenyajianKuah','punyaRasaKuah','punyaTextureKuah','punyaWarnaKuah'];
+  let h = '<h3>Karakteristik</h3><dl>' + single.filter(k => P[k]).map(k => `<dt>${PL[k]}</dt><dd>${esc(P[k].join(', '))}</dd>`).join('') + '</dl>';
+  for (const k of ['punyaTopping', 'punyaBumbu']) if (P[k]) h += `<h3>${PL[k]}</h3>` + P[k].map(x => `<span class="tag">${esc(x)}</span>`).join('');
+  if (P.gambar) h = imgTag(P.gambar[0], P.namaMenu ? P.namaMenu[0] : d.title, 'hero-img') + h;
+  show(P.namaMenu ? P.namaMenu[0] : d.title, [P.kalori ? P.kalori[0] + ' kkal' : '', P.tingkatPedas ? pedas(P.tingkatPedas[0]) : ''].filter(Boolean).join(' \u00B7 '), h);
+}
+
+$('#b-about').onclick = () => show('Tentang ontologi', 'MieAyam_lengkap.rdf', `<p>Kata kunci dibaca dari ontologi, bukan ditulis manual:</p><ul>
+  <li>kelas <b>Filter*</b> (equivalentClass + hasValue): halal, kuah bening, berbakso, &hellip;</li>
+  <li>individu komponen yang dipakai menu: bakso sapi, sawi hijau, &hellip;</li>
+  <li>kelas komponen lewat <b>rdfs:subClassOf</b>: &ldquo;daging&rdquo; mencakup ayam, sapi, dan babi.</li></ul>
+  <p>Kalimat diubah menjadi query SPARQL dan dijalankan Apache Jena.</p>`);
+$('#b-help').onclick = () => show('Cara menulis pencarian', 'Contoh kalimat', `<ul>
+  <li><b>halal pedas</b>: semua syarat harus terpenuhi (AND)</li>
+  <li><b>haram atau pedas</b>: salah satu kelompok cukup (OR)</li>
+  <li><b>tanpa babi</b>: menolak konsep tertentu</li>
+  <li><b>rendah kalori</b> (&le; 500 kkal), <b>tinggi kalori</b> (&ge; 700 kkal), <b>di bawah 500 kalori</b></li></ul>`);
+$('#dclose').onclick = () => $('#dlg').close();
+$('#dlg').addEventListener('click', e => { if (e.target === $('#dlg')) $('#dlg').close(); });
+$('#c-go').onclick = reveal;
+$('#c-q').onclick = () => { $('#sq').open = true; reveal(); };
+$('#form').addEventListener('submit', e => { e.preventDefault(); clearTimeout(timer); search(true); });
+$('#q').addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(() => search(false), 180); });
+$('#try').innerHTML = EXAMPLES.map(x => `<button type="button" data-q="${esc(x)}">${esc(x)}</button>`).join('');
+document.querySelectorAll('#try button').forEach(b => b.onclick = () => { $('#q').value = b.dataset.q; search(true); });
+
+if (!reduce) {            // animasi masuk: Web Animations API, tanpa fill akhir sehingga hilang sendiri
+  const up = (el, delay, from = 'translateY(16px)') => el.animate([{opacity: 0, transform: from}, {opacity: 1, transform: 'none'}],
+    {duration: 700, delay, easing: 'cubic-bezier(.2,.7,.2,1)', fill: 'backwards'});
+  up(document.querySelector('.hd'), 0, 'translateY(-12px)');
+  document.querySelectorAll('.ln>span').forEach((s, i) => s.animate([{transform: 'translateY(105%)'}, {transform: 'none'}],
+    {duration: 800, delay: 250 + i * 160, easing: 'cubic-bezier(.2,.7,.2,1)', fill: 'backwards'}));
+  up(document.querySelector('.lede'), 800); up(document.querySelector('.search'), 950); up(document.querySelector('.try'), 1100);
+  document.querySelectorAll('.card').forEach((c, i) => up(c, 900 + i * 280, 'translateY(28px)'));
+}
+search(false);
+</script>
+</body>
+</html>

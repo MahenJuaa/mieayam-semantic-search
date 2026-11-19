@@ -1,0 +1,1750 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2/"
+     xml:base="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:mie="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bumbu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bumbu">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Komponen"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#BumbuCair -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#BumbuCair">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bumbu"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#BumbuKering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#BumbuKering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bumbu"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#CaraPenyajianKuah -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#CaraPenyajianKuah">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#KarakterKuah"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Dicampur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Dicampur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#CaraPenyajianKuah"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Dipisah -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Dipisah">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#CaraPenyajianKuah"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Halal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Halal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sertifikasi"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#JenisKaldu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#JenisKaldu">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#KarakterKuah"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#JenisMie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#JenisMie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Komponen"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#KalduAyam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#KalduAyam">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#JenisKaldu"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#KalduJamur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#KalduJamur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#JenisKaldu"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#KalduTulangBabi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#KalduTulangBabi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#JenisKaldu"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#KarakterKuah -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#KarakterKuah">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Komponen"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kelompok -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kelompok"/>
+
+
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kerupuk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kerupuk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Topping"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Komponen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Komponen"/>
+
+
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MIeHomemade -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MIeHomemade">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#JenisMie"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MIeKriting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MIeKriting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#JenisMie"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MIeLebar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MIeLebar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#JenisMie"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+
+
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieKaret -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieKaret">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#JenisMie"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieKuning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieKuning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#JenisMie"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieLurus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieLurus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#JenisMie"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieTelur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieTelur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#JenisMie"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MinyakAromatik -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MinyakAromatik">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bumbu"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#NonHalal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#NonHalal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sertifikasi"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#NonVegetarian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#NonVegetarian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kelompok"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#OlahanAyam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#OlahanAyam">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#OlahanDaging"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#OlahanBabi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#OlahanBabi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#OlahanDaging"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#OlahanDaging -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#OlahanDaging">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Topping"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#OlahanSapi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#OlahanSapi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#OlahanDaging"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#OlahanSayur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#OlahanSayur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Topping"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#RasaKuah -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#RasaKuah">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#KarakterKuah"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sertifikasi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sertifikasi"/>
+
+
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#TextureKuah -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#TextureKuah">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#KarakterKuah"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Topping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Topping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Komponen"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Vegetarian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Vegetarian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kelompok"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#WarnaKuah -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#WarnaKuah">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#KarakterKuah"/>
+    </owl:Class>
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#punyaJenisMie -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#punyaJenisMie">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#JenisMie"/>
+    </owl:ObjectProperty>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#punyaBumbu -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#punyaBumbu">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bumbu"/>
+    </owl:ObjectProperty>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#punyaTopping -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#punyaTopping">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Topping"/>
+    </owl:ObjectProperty>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#punyaKaldu -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#punyaKaldu">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#JenisKaldu"/>
+    </owl:ObjectProperty>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#punyaCaraPenyajianKuah -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#punyaCaraPenyajianKuah">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#CaraPenyajianKuah"/>
+    </owl:ObjectProperty>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#punyaRasaKuah -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#punyaRasaKuah">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#RasaKuah"/>
+    </owl:ObjectProperty>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#punyaTextureKuah -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#punyaTextureKuah">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#TextureKuah"/>
+    </owl:ObjectProperty>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#punyaWarnaKuah -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#punyaWarnaKuah">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#WarnaKuah"/>
+    </owl:ObjectProperty>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#punyaSertifikasi -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#punyaSertifikasi">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sertifikasi"/>
+    </owl:ObjectProperty>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#termasukKelompok -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#termasukKelompok">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kelompok"/>
+    </owl:ObjectProperty>
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#namaMenu -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#namaMenu">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#kalori -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#kalori">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#gambar -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#gambar">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#tingkatPedas -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#tingkatPedas">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Kuning -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Kuning">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieKuning"/>
+    </owl:NamedIndividual>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Keriting -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Keriting">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MIeKriting"/>
+    </owl:NamedIndividual>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Lebar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Lebar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MIeLebar"/>
+    </owl:NamedIndividual>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Telur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Telur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieTelur"/>
+    </owl:NamedIndividual>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Homemade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Homemade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MIeHomemade"/>
+    </owl:NamedIndividual>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kecap_Manis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kecap_Manis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#BumbuCair"/>
+    </owl:NamedIndividual>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Saus_Sambal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Saus_Sambal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#BumbuCair"/>
+    </owl:NamedIndividual>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Merica_Bubuk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Merica_Bubuk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#BumbuKering"/>
+    </owl:NamedIndividual>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bawang_Goreng -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bawang_Goreng">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#BumbuKering"/>
+    </owl:NamedIndividual>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Minyak_Ayam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Minyak_Ayam">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MinyakAromatik"/>
+    </owl:NamedIndividual>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Ayam_Cincang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Ayam_Cincang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#OlahanAyam"/>
+    </owl:NamedIndividual>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bakso_Sapi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bakso_Sapi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#OlahanSapi"/>
+    </owl:NamedIndividual>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Daging_Babi_Cincang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Daging_Babi_Cincang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#OlahanBabi"/>
+    </owl:NamedIndividual>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sawi_Hijau -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sawi_Hijau">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#OlahanSayur"/>
+    </owl:NamedIndividual>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Jamur_Tumis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Jamur_Tumis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#OlahanSayur"/>
+    </owl:NamedIndividual>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kerupuk_Pangsit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kerupuk_Pangsit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kerupuk"/>
+    </owl:NamedIndividual>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kaldu_Ayam_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kaldu_Ayam_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#KalduAyam"/>
+    </owl:NamedIndividual>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kaldu_Jamur_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kaldu_Jamur_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#KalduJamur"/>
+    </owl:NamedIndividual>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kaldu_Tulang_Babi_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kaldu_Tulang_Babi_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#KalduTulangBabi"/>
+    </owl:NamedIndividual>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kuah_Dicampur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kuah_Dicampur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Dicampur"/>
+    </owl:NamedIndividual>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kuah_Dipisah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kuah_Dipisah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Dipisah"/>
+    </owl:NamedIndividual>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Rasa_Gurih -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Rasa_Gurih">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#RasaKuah"/>
+    </owl:NamedIndividual>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Rasa_Pedas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Rasa_Pedas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#RasaKuah"/>
+    </owl:NamedIndividual>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Texture_Bening -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Texture_Bening">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#TextureKuah"/>
+    </owl:NamedIndividual>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Texture_Kental -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Texture_Kental">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#TextureKuah"/>
+    </owl:NamedIndividual>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Warna_Bening -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Warna_Bening">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#WarnaKuah"/>
+    </owl:NamedIndividual>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Warna_Cokelat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Warna_Cokelat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#WarnaKuah"/>
+    </owl:NamedIndividual>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sertifikasi_Halal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sertifikasi_Halal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Halal"/>
+    </owl:NamedIndividual>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sertifikasi_NonHalal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sertifikasi_NonHalal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#NonHalal"/>
+    </owl:NamedIndividual>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kelompok_Vegetarian -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kelompok_Vegetarian">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Vegetarian"/>
+    </owl:NamedIndividual>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kelompok_NonVegetarian -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kelompok_NonVegetarian">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#NonVegetarian"/>
+    </owl:NamedIndividual>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamBiasa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamBiasa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <mie:punyaJenisMie rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Kuning"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Minyak_Ayam"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kecap_Manis"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bawang_Goreng"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Merica_Bubuk"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Ayam_Cincang"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sawi_Hijau"/>
+        <mie:punyaKaldu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kaldu_Ayam_1"/>
+        <mie:punyaCaraPenyajianKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kuah_Dipisah"/>
+        <mie:punyaRasaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Rasa_Gurih"/>
+        <mie:punyaTextureKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Texture_Bening"/>
+        <mie:punyaWarnaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Warna_Bening"/>
+        <mie:punyaSertifikasi rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sertifikasi_Halal"/>
+        <mie:termasukKelompok rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kelompok_NonVegetarian"/>
+        <mie:namaMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mie Ayam Biasa</mie:namaMenu>
+        <mie:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://awsimages.detik.net.id/community/media/visual/2024/07/08/mie-ayam-1_169.jpeg?w=1200</mie:gambar>
+        <mie:kalori rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">450</mie:kalori>
+        <mie:tingkatPedas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</mie:tingkatPedas>
+    </owl:NamedIndividual>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamBakso -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamBakso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <mie:punyaJenisMie rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Kuning"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Minyak_Ayam"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kecap_Manis"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bawang_Goreng"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Ayam_Cincang"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bakso_Sapi"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sawi_Hijau"/>
+        <mie:punyaKaldu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kaldu_Ayam_1"/>
+        <mie:punyaCaraPenyajianKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kuah_Dipisah"/>
+        <mie:punyaRasaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Rasa_Gurih"/>
+        <mie:punyaTextureKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Texture_Bening"/>
+        <mie:punyaWarnaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Warna_Bening"/>
+        <mie:punyaSertifikasi rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sertifikasi_Halal"/>
+        <mie:termasukKelompok rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kelompok_NonVegetarian"/>
+        <mie:namaMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mie Ayam Bakso</mie:namaMenu>
+        <mie:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://storage.googleapis.com/paxelmarket_v3_bucket/migration-prod/2021/10/09A884E1-7CD8-4220-83EB-983C927FD122_1_105_c.jpeg</mie:gambar>
+        <mie:kalori rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">550</mie:kalori>
+        <mie:tingkatPedas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</mie:tingkatPedas>
+    </owl:NamedIndividual>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamPangsit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamPangsit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <mie:punyaJenisMie rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Keriting"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Minyak_Ayam"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kecap_Manis"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bawang_Goreng"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Ayam_Cincang"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kerupuk_Pangsit"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sawi_Hijau"/>
+        <mie:punyaKaldu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kaldu_Ayam_1"/>
+        <mie:punyaCaraPenyajianKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kuah_Dicampur"/>
+        <mie:punyaRasaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Rasa_Gurih"/>
+        <mie:punyaTextureKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Texture_Bening"/>
+        <mie:punyaWarnaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Warna_Bening"/>
+        <mie:punyaSertifikasi rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sertifikasi_Halal"/>
+        <mie:termasukKelompok rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kelompok_NonVegetarian"/>
+        <mie:namaMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mie Ayam Pangsit</mie:namaMenu>
+        <mie:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://i0.wp.com/resepkoki.id/wp-content/uploads/2017/09/Resep-Mie-pangsit.jpg?fit=1735%2C1920&amp;ssl=1</mie:gambar>
+        <mie:kalori rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">520</mie:kalori>
+        <mie:tingkatPedas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</mie:tingkatPedas>
+    </owl:NamedIndividual>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamJamur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamJamur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <mie:punyaJenisMie rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Telur"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Minyak_Ayam"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kecap_Manis"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Merica_Bubuk"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Ayam_Cincang"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Jamur_Tumis"/>
+        <mie:punyaKaldu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kaldu_Jamur_1"/>
+        <mie:punyaCaraPenyajianKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kuah_Dipisah"/>
+        <mie:punyaRasaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Rasa_Gurih"/>
+        <mie:punyaTextureKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Texture_Kental"/>
+        <mie:punyaWarnaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Warna_Cokelat"/>
+        <mie:punyaSertifikasi rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sertifikasi_Halal"/>
+        <mie:termasukKelompok rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kelompok_NonVegetarian"/>
+        <mie:namaMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mie Ayam Jamur</mie:namaMenu>
+        <mie:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://asset.kompas.com/crops/zs8wxzwKi6hdJNjiLLqRvIDtu3o=/18x9:670x444/1200x1200/data/photo/2021/03/12/604b5acbc3075.jpg</mie:gambar>
+        <mie:kalori rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">480</mie:kalori>
+        <mie:tingkatPedas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</mie:tingkatPedas>
+    </owl:NamedIndividual>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamVegetarian -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamVegetarian">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <mie:punyaJenisMie rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Homemade"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kecap_Manis"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bawang_Goreng"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Merica_Bubuk"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Jamur_Tumis"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sawi_Hijau"/>
+        <mie:punyaKaldu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kaldu_Jamur_1"/>
+        <mie:punyaCaraPenyajianKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kuah_Dicampur"/>
+        <mie:punyaRasaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Rasa_Gurih"/>
+        <mie:punyaTextureKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Texture_Bening"/>
+        <mie:punyaWarnaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Warna_Bening"/>
+        <mie:punyaSertifikasi rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sertifikasi_Halal"/>
+        <mie:termasukKelompok rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kelompok_Vegetarian"/>
+        <mie:namaMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mie Ayam Vegetarian</mie:namaMenu>
+        <mie:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://down-id.img.susercontent.com/file/id-11134207-7qukw-lin7q50d8gksa8</mie:gambar>
+        <mie:kalori rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</mie:kalori>
+        <mie:tingkatPedas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</mie:tingkatPedas>
+    </owl:NamedIndividual>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamBabi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamBabi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <mie:punyaJenisMie rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Lebar"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kecap_Manis"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bawang_Goreng"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Merica_Bubuk"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Daging_Babi_Cincang"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sawi_Hijau"/>
+        <mie:punyaKaldu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kaldu_Tulang_Babi_1"/>
+        <mie:punyaCaraPenyajianKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kuah_Dipisah"/>
+        <mie:punyaRasaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Rasa_Gurih"/>
+        <mie:punyaTextureKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Texture_Kental"/>
+        <mie:punyaWarnaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Warna_Cokelat"/>
+        <mie:punyaSertifikasi rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sertifikasi_NonHalal"/>
+        <mie:termasukKelompok rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kelompok_NonVegetarian"/>
+        <mie:namaMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mie Ayam Babi</mie:namaMenu>
+        <mie:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://nibble-images.b-cdn.net/nibble/original_images/bakmi-babi-enak-di-bandung-01.jpg?class=large</mie:gambar>
+        <mie:kalori rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">600</mie:kalori>
+        <mie:tingkatPedas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</mie:tingkatPedas>
+    </owl:NamedIndividual>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamPedas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamPedas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <mie:punyaJenisMie rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Keriting"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Minyak_Ayam"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Saus_Sambal"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bawang_Goreng"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Ayam_Cincang"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bakso_Sapi"/>
+        <mie:punyaKaldu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kaldu_Ayam_1"/>
+        <mie:punyaCaraPenyajianKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kuah_Dicampur"/>
+        <mie:punyaRasaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Rasa_Gurih"/>
+        <mie:punyaRasaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Rasa_Pedas"/>
+        <mie:punyaTextureKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Texture_Kental"/>
+        <mie:punyaWarnaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Warna_Cokelat"/>
+        <mie:punyaSertifikasi rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sertifikasi_Halal"/>
+        <mie:termasukKelompok rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kelompok_NonVegetarian"/>
+        <mie:namaMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mie Ayam Pedas</mie:namaMenu>
+        <mie:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/6812614d-0c0d-4c05-9b24-b4f46b1792a2_Go-Biz_20210802_131537.jpeg</mie:gambar>
+        <mie:kalori rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">560</mie:kalori>
+        <mie:tingkatPedas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</mie:tingkatPedas>
+    </owl:NamedIndividual>
+
+    <!-- http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamSpesial -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamSpesial">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <mie:punyaJenisMie rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Homemade"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Minyak_Ayam"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kecap_Manis"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bawang_Goreng"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Merica_Bubuk"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Ayam_Cincang"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bakso_Sapi"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kerupuk_Pangsit"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sawi_Hijau"/>
+        <mie:punyaKaldu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kaldu_Ayam_1"/>
+        <mie:punyaCaraPenyajianKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kuah_Dipisah"/>
+        <mie:punyaRasaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Rasa_Gurih"/>
+        <mie:punyaTextureKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Texture_Bening"/>
+        <mie:punyaWarnaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Warna_Bening"/>
+        <mie:punyaSertifikasi rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sertifikasi_Halal"/>
+        <mie:termasukKelompok rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kelompok_NonVegetarian"/>
+        <mie:namaMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mie Ayam Spesial</mie:namaMenu>
+        <mie:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://assets.unileversolutions.com/recipes-v2/257956.jpg</mie:gambar>
+        <mie:kalori rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">700</mie:kalori>
+        <mie:tingkatPedas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</mie:tingkatPedas>
+    </owl:NamedIndividual>
+
+
+    <!-- ===== FILTER CLASSES (defined classes, equivalentClass + hasValue) ===== -->
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamFilter"><rdfs:label>Kelompok Filter Mie Ayam</rdfs:label></owl:Class>
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#FilterHalal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamFilter"/>
+        <rdfs:label>Filter Halal</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#punyaSertifikasi"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sertifikasi_Halal"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#FilterNonHalal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamFilter"/>
+        <rdfs:label>Filter Non Halal</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#punyaSertifikasi"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sertifikasi_NonHalal"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#FilterVegetarian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamFilter"/>
+        <rdfs:label>Filter Vegetarian</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#termasukKelompok"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kelompok_Vegetarian"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#FilterNonVegetarian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamFilter"/>
+        <rdfs:label>Filter Non Vegetarian</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#termasukKelompok"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kelompok_NonVegetarian"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#FilterKuahBening">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamFilter"/>
+        <rdfs:label>Filter Kuah Bening</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#punyaTextureKuah"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Texture_Bening"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#FilterKuahKental">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamFilter"/>
+        <rdfs:label>Filter Kuah Kental</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#punyaTextureKuah"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Texture_Kental"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#FilterKuahDipisah">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamFilter"/>
+        <rdfs:label>Filter Kuah Dipisah</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#punyaCaraPenyajianKuah"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kuah_Dipisah"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#FilterKuahDicampur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamFilter"/>
+        <rdfs:label>Filter Kuah Dicampur</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#punyaCaraPenyajianKuah"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kuah_Dicampur"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#FilterRasaPedas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamFilter"/>
+        <rdfs:label>Filter Rasa Pedas</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#punyaRasaKuah"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Rasa_Pedas"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#FilterBerbakso">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamFilter"/>
+        <rdfs:label>Filter Berbakso</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#punyaTopping"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bakso_Sapi"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#FilterBerpangsit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamFilter"/>
+        <rdfs:label>Filter Berpangsit</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#punyaTopping"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kerupuk_Pangsit"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#FilterBerjamur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamFilter"/>
+        <rdfs:label>Filter Berjamur</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#punyaTopping"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Jamur_Tumis"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+
+
+    <!-- TAMBAHAN: kelas baru -->
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#OlahanTelur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Topping"/>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#KalduSapi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#JenisKaldu"/>
+    </owl:Class>
+
+    <!-- TAMBAHAN: individu komponen -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Ceker_Ayam">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#OlahanAyam"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Pangsit_Rebus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#OlahanAyam"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Pangsit_Goreng">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#OlahanAyam"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Ayam_Suwir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#OlahanAyam"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bakso_Urat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#OlahanSapi"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Tetelan_Sapi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#OlahanSapi"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Babi_Panggang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#OlahanBabi"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Pangsit_Babi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#OlahanBabi"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Jamur_Shiitake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#OlahanSayur"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Tauge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#OlahanSayur"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bawang_Prei">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#OlahanSayur"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Telur_Rebus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#OlahanTelur"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Telur_Puyuh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#OlahanTelur"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kerupuk_Putih">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kerupuk"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sambal_Rawit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#BumbuCair"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Saus_Tomat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#BumbuCair"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kecap_Asin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#BumbuCair"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Cuka">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#BumbuCair"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Saus_Tiram">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#BumbuCair"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bawang_Putih_Goreng">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#BumbuKering"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Cabai_Bubuk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#BumbuKering"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Minyak_Cabai">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MinyakAromatik"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Minyak_Wijen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MinyakAromatik"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Minyak_Babi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MinyakAromatik"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kaldu_Ayam_Kampung">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#KalduAyam"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kaldu_Sapi_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#KalduSapi"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Rasa_Manis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#RasaKuah"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Rasa_Asam">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#RasaKuah"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Warna_Merah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#WarnaKuah"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Warna_Kuning">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#WarnaKuah"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Texture_Berminyak">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#TextureKuah"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Karet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieKaret"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Lurus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieLurus"/>
+    </owl:NamedIndividual>
+
+    <!-- TAMBAHAN: kelas filter baru -->
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#FilterBertelur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamFilter"/>
+        <rdfs:label>Filter Bertelur</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#punyaTopping"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Telur_Rebus"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#FilterBerceker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamFilter"/>
+        <rdfs:label>Filter Berceker</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#punyaTopping"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Ceker_Ayam"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#FilterRasaManis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamFilter"/>
+        <rdfs:label>Filter Rasa Manis</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#punyaRasaKuah"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Rasa_Manis"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#FilterMieKeriting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamFilter"/>
+        <rdfs:label>Filter Mie Keriting</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#punyaJenisMie"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Keriting"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+
+    <!-- TAMBAHAN: menu mie ayam baru -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamCeker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <mie:punyaJenisMie rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Kuning"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Minyak_Ayam"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kecap_Manis"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bawang_Goreng"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Merica_Bubuk"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Ayam_Cincang"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Ceker_Ayam"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sawi_Hijau"/>
+        <mie:punyaKaldu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kaldu_Ayam_1"/>
+        <mie:punyaCaraPenyajianKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kuah_Dipisah"/>
+        <mie:punyaRasaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Rasa_Gurih"/>
+        <mie:punyaTextureKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Texture_Bening"/>
+        <mie:punyaWarnaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Warna_Bening"/>
+        <mie:punyaSertifikasi rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sertifikasi_Halal"/>
+        <mie:termasukKelompok rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kelompok_NonVegetarian"/>
+        <mie:namaMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mie Ayam Ceker</mie:namaMenu>
+        <mie:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://image.idn.media/post/20250108/mie-ayam-ceker-3c473d1b13e4655cba5f2126c494ca8b.jpg</mie:gambar>
+        <mie:kalori rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">560</mie:kalori>
+        <mie:tingkatPedas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</mie:tingkatPedas>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamBaksoUrat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <mie:punyaJenisMie rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Lebar"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Minyak_Ayam"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kecap_Manis"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bawang_Goreng"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Saus_Sambal"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Ayam_Cincang"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bakso_Urat"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sawi_Hijau"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Tauge"/>
+        <mie:punyaKaldu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kaldu_Sapi_1"/>
+        <mie:punyaCaraPenyajianKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kuah_Dipisah"/>
+        <mie:punyaRasaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Rasa_Gurih"/>
+        <mie:punyaTextureKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Texture_Kental"/>
+        <mie:punyaWarnaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Warna_Cokelat"/>
+        <mie:punyaSertifikasi rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sertifikasi_Halal"/>
+        <mie:termasukKelompok rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kelompok_NonVegetarian"/>
+        <mie:namaMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mie Ayam Bakso Urat</mie:namaMenu>
+        <mie:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/b2242b69-dbcf-4ad3-9c57-d52cd1f107e6_Go-Biz_20220213_220806.jpeg</mie:gambar>
+        <mie:kalori rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">680</mie:kalori>
+        <mie:tingkatPedas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</mie:tingkatPedas>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamPangsitRebus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <mie:punyaJenisMie rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Telur"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Minyak_Ayam"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kecap_Manis"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bawang_Goreng"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Merica_Bubuk"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Ayam_Cincang"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Pangsit_Rebus"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sawi_Hijau"/>
+        <mie:punyaKaldu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kaldu_Ayam_1"/>
+        <mie:punyaCaraPenyajianKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kuah_Dipisah"/>
+        <mie:punyaRasaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Rasa_Gurih"/>
+        <mie:punyaTextureKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Texture_Bening"/>
+        <mie:punyaWarnaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Warna_Bening"/>
+        <mie:punyaSertifikasi rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sertifikasi_Halal"/>
+        <mie:termasukKelompok rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kelompok_NonVegetarian"/>
+        <mie:namaMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mie Ayam Pangsit Rebus</mie:namaMenu>
+        <mie:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://asset.kompas.com/crops/IMZ-XpFOZjDAok24iWCJSS1tzr8=/109x157:909x690/1200x800/data/photo/2021/11/17/61948031e73d4.jpg</mie:gambar>
+        <mie:kalori rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">560</mie:kalori>
+        <mie:tingkatPedas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</mie:tingkatPedas>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamPangsitGoreng">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <mie:punyaJenisMie rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Kuning"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Minyak_Ayam"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kecap_Manis"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bawang_Goreng"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Merica_Bubuk"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Ayam_Cincang"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Pangsit_Goreng"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kerupuk_Pangsit"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sawi_Hijau"/>
+        <mie:punyaKaldu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kaldu_Ayam_1"/>
+        <mie:punyaCaraPenyajianKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kuah_Dipisah"/>
+        <mie:punyaRasaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Rasa_Gurih"/>
+        <mie:punyaTextureKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Texture_Bening"/>
+        <mie:punyaWarnaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Warna_Bening"/>
+        <mie:punyaSertifikasi rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sertifikasi_Halal"/>
+        <mie:termasukKelompok rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kelompok_NonVegetarian"/>
+        <mie:namaMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mie Ayam Pangsit Goreng</mie:namaMenu>
+        <mie:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://dcostseafood.id/wp-content/uploads/2025/04/Bakmi-Ayam-Pangsit-Goreng.jpg</mie:gambar>
+        <mie:kalori rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">640</mie:kalori>
+        <mie:tingkatPedas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</mie:tingkatPedas>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamJumbo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <mie:punyaJenisMie rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Lebar"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Minyak_Ayam"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kecap_Manis"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bawang_Goreng"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Merica_Bubuk"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Ayam_Cincang"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Ayam_Suwir"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bakso_Sapi"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sawi_Hijau"/>
+        <mie:punyaKaldu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kaldu_Ayam_1"/>
+        <mie:punyaCaraPenyajianKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kuah_Dipisah"/>
+        <mie:punyaRasaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Rasa_Gurih"/>
+        <mie:punyaTextureKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Texture_Bening"/>
+        <mie:punyaWarnaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Warna_Bening"/>
+        <mie:punyaSertifikasi rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sertifikasi_Halal"/>
+        <mie:termasukKelompok rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kelompok_NonVegetarian"/>
+        <mie:namaMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mie Ayam Jumbo</mie:namaMenu>
+        <mie:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://image.idntimes.com/post/20210916/fromandroid-94b41cc73330d00c78b25aec5d3f6adc.jpg</mie:gambar>
+        <mie:kalori rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">850</mie:kalori>
+        <mie:tingkatPedas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</mie:tingkatPedas>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamTelur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <mie:punyaJenisMie rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Telur"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Minyak_Ayam"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kecap_Manis"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bawang_Goreng"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Merica_Bubuk"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Ayam_Cincang"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Telur_Rebus"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sawi_Hijau"/>
+        <mie:punyaKaldu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kaldu_Ayam_1"/>
+        <mie:punyaCaraPenyajianKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kuah_Dipisah"/>
+        <mie:punyaRasaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Rasa_Gurih"/>
+        <mie:punyaTextureKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Texture_Bening"/>
+        <mie:punyaWarnaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Warna_Bening"/>
+        <mie:punyaSertifikasi rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sertifikasi_Halal"/>
+        <mie:termasukKelompok rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kelompok_NonVegetarian"/>
+        <mie:namaMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mie Ayam Telur</mie:namaMenu>
+        <mie:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.lemon8-app.com/seo/image?item_id=7466335699864863240&amp;index=0&amp;sign=7a6fd510f1ab73119913a78788744eba</mie:gambar>
+        <mie:kalori rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">530</mie:kalori>
+        <mie:tingkatPedas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</mie:tingkatPedas>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamBaksoTelur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <mie:punyaJenisMie rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Lebar"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Minyak_Ayam"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kecap_Manis"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bawang_Goreng"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Merica_Bubuk"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Ayam_Cincang"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bakso_Sapi"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Telur_Rebus"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sawi_Hijau"/>
+        <mie:punyaKaldu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kaldu_Ayam_1"/>
+        <mie:punyaCaraPenyajianKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kuah_Dipisah"/>
+        <mie:punyaRasaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Rasa_Gurih"/>
+        <mie:punyaTextureKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Texture_Bening"/>
+        <mie:punyaWarnaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Warna_Bening"/>
+        <mie:punyaSertifikasi rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sertifikasi_Halal"/>
+        <mie:termasukKelompok rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kelompok_NonVegetarian"/>
+        <mie:namaMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mie Ayam Bakso Telur</mie:namaMenu>
+        <mie:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/febabda1-9ad2-4322-9465-a8a013105c64_Go-Biz_20201203_140048.jpeg</mie:gambar>
+        <mie:kalori rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">740</mie:kalori>
+        <mie:tingkatPedas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</mie:tingkatPedas>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamKomplit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <mie:punyaJenisMie rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Homemade"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Minyak_Ayam"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kecap_Manis"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bawang_Goreng"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Merica_Bubuk"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Saus_Sambal"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Ayam_Cincang"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bakso_Sapi"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Pangsit_Rebus"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Telur_Rebus"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Jamur_Tumis"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sawi_Hijau"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kerupuk_Pangsit"/>
+        <mie:punyaKaldu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kaldu_Ayam_Kampung"/>
+        <mie:punyaCaraPenyajianKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kuah_Dipisah"/>
+        <mie:punyaRasaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Rasa_Gurih"/>
+        <mie:punyaTextureKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Texture_Bening"/>
+        <mie:punyaWarnaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Warna_Bening"/>
+        <mie:punyaSertifikasi rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sertifikasi_Halal"/>
+        <mie:termasukKelompok rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kelompok_NonVegetarian"/>
+        <mie:namaMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mie Ayam Komplit</mie:namaMenu>
+        <mie:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://down-id.img.susercontent.com/file/aae8881793cf462c2259e3d4086e5bb4</mie:gambar>
+        <mie:kalori rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">920</mie:kalori>
+        <mie:tingkatPedas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</mie:tingkatPedas>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamSetan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <mie:punyaJenisMie rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Keriting"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Minyak_Cabai"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sambal_Rawit"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Cabai_Bubuk"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kecap_Manis"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bawang_Goreng"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Ayam_Cincang"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sawi_Hijau"/>
+        <mie:punyaKaldu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kaldu_Ayam_1"/>
+        <mie:punyaCaraPenyajianKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kuah_Dicampur"/>
+        <mie:punyaRasaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Rasa_Pedas"/>
+        <mie:punyaTextureKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Texture_Berminyak"/>
+        <mie:punyaWarnaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Warna_Merah"/>
+        <mie:punyaSertifikasi rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sertifikasi_Halal"/>
+        <mie:termasukKelompok rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kelompok_NonVegetarian"/>
+        <mie:namaMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mie Ayam Setan</mie:namaMenu>
+        <mie:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://jurnaba.co/wp-content/uploads/2020/08/mie.jpg</mie:gambar>
+        <mie:kalori rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">620</mie:kalori>
+        <mie:tingkatPedas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</mie:tingkatPedas>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamRicaRica">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <mie:punyaJenisMie rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Kuning"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Minyak_Cabai"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sambal_Rawit"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bawang_Putih_Goreng"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Ayam_Suwir"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bawang_Prei"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sawi_Hijau"/>
+        <mie:punyaKaldu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kaldu_Ayam_Kampung"/>
+        <mie:punyaCaraPenyajianKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kuah_Dicampur"/>
+        <mie:punyaRasaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Rasa_Pedas"/>
+        <mie:punyaTextureKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Texture_Kental"/>
+        <mie:punyaWarnaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Warna_Merah"/>
+        <mie:punyaSertifikasi rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sertifikasi_Halal"/>
+        <mie:termasukKelompok rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kelompok_NonVegetarian"/>
+        <mie:namaMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mie Ayam Rica-Rica</mie:namaMenu>
+        <mie:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://bayoranteknik.co.id/wp-content/uploads/2026/01/mie-ayam-rica-rica.webp</mie:gambar>
+        <mie:kalori rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">640</mie:kalori>
+        <mie:tingkatPedas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</mie:tingkatPedas>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamCabeHijau">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <mie:punyaJenisMie rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Kuning"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Minyak_Cabai"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sambal_Rawit"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bawang_Putih_Goreng"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Merica_Bubuk"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Ayam_Suwir"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bawang_Prei"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sawi_Hijau"/>
+        <mie:punyaKaldu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kaldu_Ayam_Kampung"/>
+        <mie:punyaCaraPenyajianKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kuah_Dipisah"/>
+        <mie:punyaRasaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Rasa_Pedas"/>
+        <mie:punyaTextureKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Texture_Bening"/>
+        <mie:punyaWarnaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Warna_Kuning"/>
+        <mie:punyaSertifikasi rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sertifikasi_Halal"/>
+        <mie:termasukKelompok rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kelompok_NonVegetarian"/>
+        <mie:namaMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mie Ayam Cabe Hijau</mie:namaMenu>
+        <mie:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://assets.unileversolutions.com/recipes-v2/125740.jpg</mie:gambar>
+        <mie:kalori rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">600</mie:kalori>
+        <mie:tingkatPedas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</mie:tingkatPedas>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamPedasManis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <mie:punyaJenisMie rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Kuning"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kecap_Manis"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Saus_Sambal"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Minyak_Ayam"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bawang_Goreng"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Ayam_Cincang"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sawi_Hijau"/>
+        <mie:punyaKaldu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kaldu_Ayam_1"/>
+        <mie:punyaCaraPenyajianKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kuah_Dipisah"/>
+        <mie:punyaRasaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Rasa_Manis"/>
+        <mie:punyaTextureKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Texture_Kental"/>
+        <mie:punyaWarnaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Warna_Merah"/>
+        <mie:punyaSertifikasi rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sertifikasi_Halal"/>
+        <mie:termasukKelompok rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kelompok_NonVegetarian"/>
+        <mie:namaMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mie Ayam Pedas Manis</mie:namaMenu>
+        <mie:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://awsimages.detik.net.id/community/media/visual/2023/03/04/resep-mie-ayam-rica_43.jpeg?w=600&amp;q=90</mie:gambar>
+        <mie:kalori rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">560</mie:kalori>
+        <mie:tingkatPedas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</mie:tingkatPedas>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamManisJawa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <mie:punyaJenisMie rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Kuning"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Minyak_Ayam"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kecap_Manis"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bawang_Goreng"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Merica_Bubuk"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Ayam_Cincang"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sawi_Hijau"/>
+        <mie:punyaKaldu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kaldu_Ayam_1"/>
+        <mie:punyaCaraPenyajianKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kuah_Dipisah"/>
+        <mie:punyaRasaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Rasa_Manis"/>
+        <mie:punyaTextureKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Texture_Kental"/>
+        <mie:punyaWarnaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Warna_Cokelat"/>
+        <mie:punyaSertifikasi rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sertifikasi_Halal"/>
+        <mie:termasukKelompok rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kelompok_NonVegetarian"/>
+        <mie:namaMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mie Ayam Manis Jawa</mie:namaMenu>
+        <mie:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://image.idn.media/post/20220519/236332236-555685455577589-281880057071488285-n-5e9899eed4f0a1941b47eb41ee62f6b3.jpg</mie:gambar>
+        <mie:kalori rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">500</mie:kalori>
+        <mie:tingkatPedas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</mie:tingkatPedas>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamYamin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <mie:punyaJenisMie rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Lurus"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kecap_Manis"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Saus_Tiram"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Minyak_Ayam"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bawang_Putih_Goreng"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Ayam_Cincang"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sawi_Hijau"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Tauge"/>
+        <mie:punyaKaldu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kaldu_Ayam_1"/>
+        <mie:punyaCaraPenyajianKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kuah_Dipisah"/>
+        <mie:punyaRasaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Rasa_Manis"/>
+        <mie:punyaTextureKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Texture_Kental"/>
+        <mie:punyaWarnaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Warna_Cokelat"/>
+        <mie:punyaSertifikasi rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sertifikasi_Halal"/>
+        <mie:termasukKelompok rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kelompok_NonVegetarian"/>
+        <mie:namaMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mie Ayam Yamin</mie:namaMenu>
+        <mie:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://asset.kompas.com/crops/lHnHKW-SrjW26Ka4VIbxzp_1v5E=/0x0:1000x667/1200x800/data/photo/2023/08/29/64ed41fd10154.jpg</mie:gambar>
+        <mie:kalori rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">520</mie:kalori>
+        <mie:tingkatPedas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</mie:tingkatPedas>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamKampung">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <mie:punyaJenisMie rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Telur"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Minyak_Ayam"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bawang_Goreng"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Merica_Bubuk"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kecap_Asin"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Ayam_Suwir"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Telur_Puyuh"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sawi_Hijau"/>
+        <mie:punyaKaldu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kaldu_Ayam_Kampung"/>
+        <mie:punyaCaraPenyajianKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kuah_Dipisah"/>
+        <mie:punyaRasaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Rasa_Gurih"/>
+        <mie:punyaTextureKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Texture_Bening"/>
+        <mie:punyaWarnaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Warna_Kuning"/>
+        <mie:punyaSertifikasi rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sertifikasi_Halal"/>
+        <mie:termasukKelompok rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kelompok_NonVegetarian"/>
+        <mie:namaMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mie Ayam Kampung</mie:namaMenu>
+        <mie:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pict.sindonews.com/dyn/850/pena/news/2021/02/03/185/322652/cobain-nih-resep-mi-ayam-kampung-ala-abangabang-gok.jpg</mie:gambar>
+        <mie:kalori rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">590</mie:kalori>
+        <mie:tingkatPedas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</mie:tingkatPedas>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamKeritingBakso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <mie:punyaJenisMie rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Keriting"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Minyak_Ayam"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kecap_Manis"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bawang_Goreng"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Merica_Bubuk"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Ayam_Cincang"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bakso_Sapi"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sawi_Hijau"/>
+        <mie:punyaKaldu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kaldu_Ayam_1"/>
+        <mie:punyaCaraPenyajianKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kuah_Dipisah"/>
+        <mie:punyaRasaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Rasa_Gurih"/>
+        <mie:punyaTextureKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Texture_Bening"/>
+        <mie:punyaWarnaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Warna_Bening"/>
+        <mie:punyaSertifikasi rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sertifikasi_Halal"/>
+        <mie:termasukKelompok rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kelompok_NonVegetarian"/>
+        <mie:namaMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mie Ayam Keriting Bakso</mie:namaMenu>
+        <mie:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://down-id.img.susercontent.com/file/2829b966674f7ce4fe3ff3793025b320</mie:gambar>
+        <mie:kalori rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">650</mie:kalori>
+        <mie:tingkatPedas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</mie:tingkatPedas>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamTetelan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <mie:punyaJenisMie rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Karet"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Minyak_Ayam"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kecap_Manis"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bawang_Goreng"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Merica_Bubuk"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Ayam_Cincang"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Tetelan_Sapi"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sawi_Hijau"/>
+        <mie:punyaKaldu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kaldu_Sapi_1"/>
+        <mie:punyaCaraPenyajianKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kuah_Dipisah"/>
+        <mie:punyaRasaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Rasa_Gurih"/>
+        <mie:punyaTextureKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Texture_Kental"/>
+        <mie:punyaWarnaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Warna_Cokelat"/>
+        <mie:punyaSertifikasi rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sertifikasi_Halal"/>
+        <mie:termasukKelompok rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kelompok_NonVegetarian"/>
+        <mie:namaMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mie Ayam Tetelan</mie:namaMenu>
+        <mie:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://rricoid-assets.obs.ap-southeast-4.myhuaweicloud.com/berita/Semarang/o/1747795124580--Foto_4-Mie_Ayam_Tetelan(Foto_RRI_Lucky_Setiawan)/kjew2t59xgpsjem.jpeg</mie:gambar>
+        <mie:kalori rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">720</mie:kalori>
+        <mie:tingkatPedas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</mie:tingkatPedas>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamWonogiri">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <mie:punyaJenisMie rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Kuning"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Minyak_Ayam"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kecap_Manis"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bawang_Goreng"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Saus_Tomat"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Ayam_Cincang"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sawi_Hijau"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kerupuk_Putih"/>
+        <mie:punyaKaldu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kaldu_Ayam_1"/>
+        <mie:punyaCaraPenyajianKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kuah_Dipisah"/>
+        <mie:punyaRasaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Rasa_Gurih"/>
+        <mie:punyaTextureKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Texture_Kental"/>
+        <mie:punyaWarnaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Warna_Cokelat"/>
+        <mie:punyaSertifikasi rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sertifikasi_Halal"/>
+        <mie:termasukKelompok rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kelompok_NonVegetarian"/>
+        <mie:namaMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mie Ayam Wonogiri</mie:namaMenu>
+        <mie:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://assets.tmecosys.com/image/upload/t_web_rdp_recipe_584x480/img/recipe/ras/Assets/c22023967af0fcd93bd290a944e621d1/Derivates/d0a2d382577919670dd2a707388771d3c3566c63.jpg</mie:gambar>
+        <mie:kalori rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">540</mie:kalori>
+        <mie:tingkatPedas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</mie:tingkatPedas>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamBangka">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <mie:punyaJenisMie rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Karet"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kecap_Asin"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Cuka"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Minyak_Ayam"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bawang_Putih_Goreng"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Ayam_Cincang"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Tauge"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bawang_Prei"/>
+        <mie:punyaKaldu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kaldu_Ayam_1"/>
+        <mie:punyaCaraPenyajianKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kuah_Dicampur"/>
+        <mie:punyaRasaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Rasa_Asam"/>
+        <mie:punyaTextureKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Texture_Berminyak"/>
+        <mie:punyaWarnaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Warna_Cokelat"/>
+        <mie:punyaSertifikasi rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sertifikasi_Halal"/>
+        <mie:termasukKelompok rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kelompok_NonVegetarian"/>
+        <mie:namaMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mie Ayam Bangka</mie:namaMenu>
+        <mie:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://upload.wikimedia.org/wikipedia/commons/5/5c/Mi_Bangka_Keliling.jpg?utm_source=id.wikipedia.org&amp;utm_campaign=index&amp;utm_content=original</mie:gambar>
+        <mie:kalori rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">580</mie:kalori>
+        <mie:tingkatPedas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</mie:tingkatPedas>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamHemat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <mie:punyaJenisMie rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Kuning"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kecap_Manis"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bawang_Goreng"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Ayam_Cincang"/>
+        <mie:punyaKaldu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kaldu_Ayam_1"/>
+        <mie:punyaCaraPenyajianKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kuah_Dipisah"/>
+        <mie:punyaRasaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Rasa_Gurih"/>
+        <mie:punyaTextureKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Texture_Bening"/>
+        <mie:punyaWarnaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Warna_Bening"/>
+        <mie:punyaSertifikasi rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sertifikasi_Halal"/>
+        <mie:termasukKelompok rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kelompok_NonVegetarian"/>
+        <mie:namaMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mie Ayam Hemat</mie:namaMenu>
+        <mie:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.lemon8-app.com/seo/image?item_id=7380650852081615376&amp;index=1&amp;sign=8b74e50dec4d2b6fd0bf3d2aaaec20a7</mie:gambar>
+        <mie:kalori rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">380</mie:kalori>
+        <mie:tingkatPedas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</mie:tingkatPedas>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamShiitakeVegan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <mie:punyaJenisMie rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Lurus"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kecap_Manis"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Minyak_Wijen"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bawang_Putih_Goreng"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Merica_Bubuk"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Jamur_Shiitake"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Jamur_Tumis"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sawi_Hijau"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Tauge"/>
+        <mie:punyaKaldu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kaldu_Jamur_1"/>
+        <mie:punyaCaraPenyajianKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kuah_Dicampur"/>
+        <mie:punyaRasaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Rasa_Gurih"/>
+        <mie:punyaTextureKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Texture_Bening"/>
+        <mie:punyaWarnaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Warna_Bening"/>
+        <mie:punyaSertifikasi rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sertifikasi_Halal"/>
+        <mie:termasukKelompok rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kelompok_Vegetarian"/>
+        <mie:namaMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mie Ayam Shiitake Vegan</mie:namaMenu>
+        <mie:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://image.idn.media/post/20260517/upload_a50a136ad397c8a8b6a07bbe4a7b47f2_3c05a02f-0d2d-4dcc-b716-20259f4c2883.jpg</mie:gambar>
+        <mie:kalori rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">380</mie:kalori>
+        <mie:tingkatPedas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</mie:tingkatPedas>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamVegetarianPedas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <mie:punyaJenisMie rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Homemade"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Minyak_Cabai"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sambal_Rawit"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kecap_Manis"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bawang_Goreng"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Jamur_Tumis"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sawi_Hijau"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bawang_Prei"/>
+        <mie:punyaKaldu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kaldu_Jamur_1"/>
+        <mie:punyaCaraPenyajianKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kuah_Dicampur"/>
+        <mie:punyaRasaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Rasa_Pedas"/>
+        <mie:punyaTextureKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Texture_Bening"/>
+        <mie:punyaWarnaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Warna_Merah"/>
+        <mie:punyaSertifikasi rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sertifikasi_Halal"/>
+        <mie:termasukKelompok rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kelompok_Vegetarian"/>
+        <mie:namaMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mie Ayam Vegetarian Pedas</mie:namaMenu>
+        <mie:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://image.idn.media/post/20250411/whatsapp-image-2025-04-11-at-165446-f8244d87965fcbf6fea8b8bae83a977f.jpeg</mie:gambar>
+        <mie:kalori rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">420</mie:kalori>
+        <mie:tingkatPedas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</mie:tingkatPedas>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamBabiPangsit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <mie:punyaJenisMie rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Lebar"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Minyak_Babi"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kecap_Manis"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bawang_Goreng"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Merica_Bubuk"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Daging_Babi_Cincang"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Pangsit_Babi"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sawi_Hijau"/>
+        <mie:punyaKaldu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kaldu_Tulang_Babi_1"/>
+        <mie:punyaCaraPenyajianKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kuah_Dipisah"/>
+        <mie:punyaRasaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Rasa_Gurih"/>
+        <mie:punyaTextureKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Texture_Kental"/>
+        <mie:punyaWarnaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Warna_Cokelat"/>
+        <mie:punyaSertifikasi rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sertifikasi_NonHalal"/>
+        <mie:termasukKelompok rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kelompok_NonVegetarian"/>
+        <mie:namaMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mie Ayam Babi Pangsit</mie:namaMenu>
+        <mie:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://rricoid-assets.obs.ap-southeast-4.myhuaweicloud.com/berita/Palangkaraya/o/1729700475415-IMG_20241023_231821/i8jgtxv6m5l3hnz.jpeg</mie:gambar>
+        <mie:kalori rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">700</mie:kalori>
+        <mie:tingkatPedas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</mie:tingkatPedas>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyamBabiSpesial">
+        <rdf:type rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#MieAyam"/>
+        <mie:punyaJenisMie rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Mie_Homemade"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Minyak_Babi"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kecap_Manis"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Saus_Sambal"/>
+        <mie:punyaBumbu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Bawang_Goreng"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Daging_Babi_Cincang"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Babi_Panggang"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Pangsit_Babi"/>
+        <mie:punyaTopping rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sawi_Hijau"/>
+        <mie:punyaKaldu rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kaldu_Tulang_Babi_1"/>
+        <mie:punyaCaraPenyajianKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kuah_Dipisah"/>
+        <mie:punyaRasaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Rasa_Gurih"/>
+        <mie:punyaTextureKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Texture_Kental"/>
+        <mie:punyaWarnaKuah rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Warna_Cokelat"/>
+        <mie:punyaSertifikasi rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Sertifikasi_NonHalal"/>
+        <mie:termasukKelompok rdf:resource="http://www.semanticweb.org/legion/ontologies/2026/8/untitled-ontology-2#Kelompok_NonVegetarian"/>
+        <mie:namaMenu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mie Ayam Babi Spesial</mie:namaMenu>
+        <mie:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://nibble-images.b-cdn.net/nibble/original_images/bakmi-babi-jakarta-06.jpg</mie:gambar>
+        <mie:kalori rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">880</mie:kalori>
+        <mie:tingkatPedas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</mie:tingkatPedas>
+    </owl:NamedIndividual>
+
+
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
